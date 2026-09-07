@@ -1,11 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <title>DCIT50 Lab 1 - HTML Only</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Mark Arevalo — Aspiring Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cavite State University - Lab Exercise 1</h1>
-    <p>This is the original HTML-only version preserved in the no-style branch.</p>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">JMA<span>.</span></a>
+            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="hamburger" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge"><i class="fa-solid fa-sparkles"></i> Aspiring Web Developer & IT Student</span>
+                    <h1>Hi, I'm <span class="highlight-text">John Mark Arevalo</span></h1>
+                    <p>Passionate about crafting clean, responsive, and user-centric web experiences. Currently expanding my skills in modern frontend and backend technologies.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="image-placeholder">
+                        <div class="avatar-glow"></div>
+                        <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>A dedicated student exploring the world of web development</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text card-surface">
+                        <h3>My Journey into Code</h3>
+                        <p>I am currently an IT student with a strong interest in software engineering and UI/UX design. My journey began with curiosity about how websites function, which quickly turned into a passion for building them.</p>
+                        <p>I enjoy the challenge of turning complex problems into simple, intuitive, and functional web interfaces. I am eager to learn from real-world projects and collaborate with fellow developers.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="icon-box"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+                        <h4>Learning Philosophy</h4>
+                        <p>"Every line of code written is a step forward. I believe in continuous improvement, clean coding practices, and building accessible applications for everyone."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <p>The toolkit I am currently building and utilizing</p>
+                </div>
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="badge-container">
+                            <span class="skill-badge">HTML5 (Semantic)</span>
+                            <span class="skill-badge">CSS3 (Flexbox/Grid)</span>
+                            <span class="skill-badge">JavaScript (ES6+)</span>
+                            <span class="skill-badge">Responsive Design</span>
+                        </div>
+                    </div>
+                    <!-- Tools & Design -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <h3>Tools & Workflow</h3>
+                        </div>
+                        <div class="badge-container">
+                            <span class="skill-badge">Git & GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Figma (UI/UX)</span>
+                            <span class="skill-badge">Command Line</span>
+                        </div>
+                    </div>
+                    <!-- Learning/Exposure -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-compass"></i>
+                            <h3>Currently Exploring</h3>
+                        </div>
+                        <div class="badge-container">
+                            <span class="skill-badge">React.js</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Database Basics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                    <p>A selection of my academic and personal work</p>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" role="toolbar" aria-label="Project filter options">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <!-- Project Placeholder 1 -->
+                    <article class="project-card" data-category="academic">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>University Enrollment System</h3>
+                            <p>A frontend interface design for a university enrollment system, focused on user experience for students registering for classes.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Figma</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiyoshi0-0/LAB1-AREVALO" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code Repository</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Placeholder 2 -->
+                    <article class="project-card" data-category="personal">
+                        <div class="project-img-placeholder accent-gradient">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Personal Portfolio Website (v1)</h3>
+                            <p>My very first portfolio website built from scratch to showcase my skills and learning progress in web development.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiyoshi0-0/LAB1-AREVALO" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code Repository</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education & Experience</h2>
+                    <p>My academic background and professional journey</p>
+                </div>
+                <div class="timeline">
+                    <!-- Education Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - Present</div>
+                        <div class="timeline-content">
+                            <h3>B.S. in Information Technology</h3>
+                            <h4>Cavite State University - Main Campus</h4>
+                            <p>Currently pursuing a degree in IT, focusing on software development fundamentals, database management, and web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                    <p>Interested in collaborating or have a question? Send me a message!</p>
+                </div>
+                <div class="contact-wrapper">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hello, I'd like to talk about..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <!-- Success Message -->
+                        <div id="formSuccess" class="form-success hidden" role="alert">
+                            <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been received.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 John Mark Arevalo. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/kiyoshi0-0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:johnmark.arevalo.student@cvsu.edu.ph" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
